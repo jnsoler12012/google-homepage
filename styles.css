@@ -1,9 +1,17 @@
+/*main*/
+
 .main{
     display: flex;
     justify-content: center;
-    flex-direction: column;   
+    justify-items: center;
+    flex-direction: column;
+    width: 100%;  
+    position: fixed;
+    margin-left: -9px;
+    font-family: sans-serif,  Arial, Helvetica ;
+    font-size: 12px;
 }
-
+/*container logos */
 .container{
     min-width: 980px;
     left: 0;
@@ -12,7 +20,7 @@
     position: -webkit-sticky;
     position: sticky;
     bottom: 0px;
-    background-color: lightblue;
+    /*background-color: lightblue;*/
     height: 95px ;
     width: 100%;
     justify-content: flex-end;
@@ -24,24 +32,36 @@
     flex-direction: row;
     height: 40px;
     width: 256px;
-    background-color: green;
+    /*background-color: green;*/
     margin-right: 15px;
-    margin-top: -40px;
+    /*margin-top: -40px;*/
     justify-content: space-evenly;
     align-items: center;
+    position: sticky;
+    top: 20px;
+    position: fixed;
 }
 
 
 .logo{
     display: flex;
-    
-    background-color: indianred;
+    /*background-color: indianred;*/
+    align-items: center;
   
 }
 
+.icon{
+    max-width:100%;
+    max-height:100%;
+    vertical-align: center;
+    /*opacity:40%;*/
+}
+.icon:hover{opacity:60%;}
 #logos1{
     width:33.95px ;
     height: 25px;
+    align-items: center;
+    align-content: center;
 }
 #logos2{
     width:57.166px ;
@@ -54,30 +74,170 @@
 #logos4{
     width: 32px;
     height:32px;
+    text-align: center;
 }
 
-
+/*google logo */
 .container2{
     display: flex;
     margin-right: 0px;
-    background-color: red;
+    /*background-color: red;*/
     height: 170px ;
     width: 100%;
     justify-content: center;
     align-items: center;
 }
-
 .google {
-    background-color: yellow;
+    /*background-color: yellow;*/
     height: 92px;
     width: 272px;
-    margin-top:42px;
+    margin-top: 30px;
+}
+/*search bar*/
+.container3{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-wrap: wrap;
+    flex-direction: ;
+    width: 100%;
+    height: 80px;
+    /*background-color: lightgreen;*/
 }
 
+.searchbox{
+    display: flex;
+    min-width: 200px ;
+    width: 582px ;
+    height: 47px;
+    background-color: white;
+    border-radius: 24px;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    -ms-border-radius: 24px;
+    -o-border-radius: 24px;
+    align-content: center;
+    align-items: center;
+    border: 1px solid #dfe1e5;
+}
+.searchbox:hover{ box-shadow: 2px 2px 5px #999;}
+.searchimg{
+    margin-left: 20px;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+}
 
+.searchicon{
+    max-width:100%;
+    max-height:100%;
+    vertical-align: center;
+    opacity:40%;
+}
 
+#text{
+    margin-left: 10px;
+    width: 100%;
+    max-width: 80%;
+    box-shadow: none;
+    border: 0px;
+}
 
+/*botones*/
 
+.botones-cont{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: flex-start;
+    height: 58px;
+    width: 480px;
+    /*background-color: burlywood;*/
+}
+
+#boton1{
+    top: 0px;
+    min-width: 140px;
+    width: 152.5px ;
+    height: 36px;
+    /*background-color: cadetblue;*/
+}
+
+#boton2{  
+    min-width: 140px;
+    width: 220.5px ;
+    height: 36px;
+    /*background-color: cyan;*/
+}
+
+#medio{
+    height: 36px;
+    width: 20px;
+}
+.button{border-style: none; cursor:pointer;}
+.button:hover{border-style: #636363; opacity: 99%;}
+
+/*footer*/
+
+.container4{
+    width: 100%;
+    height: 80px;
+    position: sticky;
+    bottom: 0px;
+    /*background-color: blue;*/
+    margin-bottom: 0px;
+    position: fixed;
+}
+.footer1{
+    display: flex;
+    width:auto;
+    height: 40px;
+    background-color: #f2f2f2;
+    align-items: center;
+    border: solid #d4d4d4 1px;
+}
+#text{
+    margin-left: 35px;
+    color: #5b5666 ;
+    font-size: 14px;
+    opacity: 80%;
+}
+.footer2{
+    display: flex;
+    width:auto;
+    height: 40px;
+    background-color: #f2f2f2;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+.lista{
+    display:flex;
+    width: 900px;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 35px;
+}
+.texto{
+    height: 15px;
+    width: 95px;
+    min-width: 70px;
+    color: #5b5666 ;
+    font-size: 14px;
+    opacity: 80%;
+    align-self: center;
+}#texto3{
+    width: 108px;   
+}#texto4{
+    width: 199px;   
+}
+
+.lista2{
+    display: flex;
+    justify-items: flex-end;
+    flex-direction: row-reverse;
+    margin-left: 200px;
+}
 
 
 
